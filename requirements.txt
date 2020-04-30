@@ -1,0 +1,5 @@
+coverage==5.1
+cython==0.29.17
+pytest==5.4.1
+pytest-cov==2.8.1
+

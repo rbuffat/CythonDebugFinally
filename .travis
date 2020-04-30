@@ -1,0 +1,14 @@
+language: python
+dist: xenial
+
+- python: "3.8"
+
+before_install:
+  - python -m pip install -U pip
+  - python -m pip install -r requirements-dev.txt
+
+install:
+  - python -m pip install --no-deps --force-reinstall -e .
+
+script:
+  - python -m pytest --cov tryfinally --cov-report term-missing
